@@ -1,0 +1,15 @@
+# 1. Apague tudo do repo local
+cd seu-repo
+rm -rf *
+
+# 2. Descompacte o novo zip DIRETO na raiz
+unzip sprintflow-kanban.zip -d .
+
+# 3. Verifique que src/app/ está na raiz
+ls src/app/
+# Deve mostrar: globals.css  layout.js  page.js
+
+# 4. Commit e push
+git add -A
+git commit -m "fix: move files to root - fix Vercel build"
+git push
